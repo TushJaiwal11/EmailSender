@@ -7,7 +7,7 @@ D:\SpingBoot\EmailServiceBackend And Frontend\EmailSender\src\main\java\com\tj\e
 D:\SpingBoot\EmailServiceBackend And Frontend\EmailSender\src\main\java\com\tj\email\controller\EmailConfigController.java
 D:\SpingBoot\EmailServiceBackend And Frontend\EmailSender\src\main\java\com\tj\email\controller\PaymentController.java
 D:\SpingBoot\EmailServiceBackend And Frontend\EmailSender\src\main\java\com\tj\email\controller\ReferralPointController.java
-D:\SpingBoot\EmailServiceBackend And Frontend\EmailSender\src\main\java\com\tj\email\controller\SubcriptionController.java
+D:\SpingBoot\EmailServiceBackend And Frontend\EmailSender\src\main\java\com\tj\email\controller\SubscriptionController.java
 D:\SpingBoot\EmailServiceBackend And Frontend\EmailSender\src\main\java\com\tj\email\controller\UserController.java
 D:\SpingBoot\EmailServiceBackend And Frontend\EmailSender\src\main\java\com\tj\email\EmailSenderApplication.java
 D:\SpingBoot\EmailServiceBackend And Frontend\EmailSender\src\main\java\com\tj\email\exception\ErrorDetails.java

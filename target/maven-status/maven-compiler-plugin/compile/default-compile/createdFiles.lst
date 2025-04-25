@@ -7,7 +7,6 @@ com\tj\email\model\domain\UserRole.class
 com\tj\email\service\AdminService.class
 com\tj\email\service\impl\ReferralPointServiceImpl.class
 com\tj\email\service\impl\UserServiceImpl.class
-com\tj\email\controller\SubcriptionController.class
 com\tj\email\controller\PaymentController.class
 com\tj\email\repository\EmailConfigRepository.class
 com\tj\email\controller\EmailConfigController.class
@@ -39,5 +38,6 @@ com\tj\email\service\impl\EmailConfigServiceImpl.class
 com\tj\email\exception\ErrorDetails.class
 com\tj\email\EmailSenderApplication.class
 com\tj\email\model\EmailConfig.class
+com\tj\email\controller\SubscriptionController.class
 com\tj\email\controller\UserController.class
 com\tj\email\config\JwtConstant.class
