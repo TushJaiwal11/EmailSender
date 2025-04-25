@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c15721b-b82f-4209-b85d-1337a8f17317" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/SubscriptionController.java" afterDir="false" />
-    </list>
+    <list default="true" id="8c15721b-b82f-4209-b85d-1337a8f17317" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +48,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.EmailSenderApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/SpingBoot/EmailServiceBackend And Frontend/EmailSender",
     "node.js.detected.package.eslint": "true",
@@ -109,7 +105,7 @@
       <workItem from="1745406729530" duration="600000" />
       <workItem from="1745407487060" duration="2836000" />
       <workItem from="1745488632089" duration="2154000" />
-      <workItem from="1745554015893" duration="1067000" />
+      <workItem from="1745554015893" duration="1371000" />
     </task>
     <servers />
   </component>
