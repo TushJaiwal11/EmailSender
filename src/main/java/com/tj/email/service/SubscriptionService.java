@@ -12,7 +12,7 @@ public interface SubscriptionService {
 
 	Subscription createSubscription(User user) throws UserException;
 
-	String getUsersSubscription() throws UserException;
+//	String getUsersSubscription() throws UserException;
 
 	Subscription upgradeSubscription(Long userId, PlanType planType) throws UserException;
 

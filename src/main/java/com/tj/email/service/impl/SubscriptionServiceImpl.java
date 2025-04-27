@@ -62,50 +62,50 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 		return savedSubscription;
 	}
 
-	@Override
-	@Scheduled(fixedRate = 3600000) // every 1 minute
-	public String getUsersSubscription() throws UserException {
-		logger.info("⏰ Scheduled Task: Checking all user subscriptions...");
-
-		List<Subscription> subscriptions = subscriptionRepository.findAll();
-
-		if (subscriptions.isEmpty()) {
-			logger.warn("⚠️ No subscriptions found in the system.");
-			throw new UserException("No one has subscriptions.");
-		}
-
-		for (Subscription subscription : subscriptions) {
-
-			// Skip already reset subscriptions (FREE & null expiry)
-			if (subscription.getPlanType() == PlanType.FREE && subscription.getSubscriptionExpiryDate() == null) {
-				continue;
-			}
-
-			// Check if subscription is expired
-			if (!isValid(subscription)) {
-				Long userId = subscription.getUser().getId();
-				logger.info("🔁 Resetting expired subscription for userId: {}", userId);
-
-				// Reset subscription
-				subscription.setPlanType(PlanType.FREE);
-				subscription.setIsValid(false);
-				subscription.setSubscriptionExpiryDate(null);
-				subscription.setSubscriptionPurchaseDate(null);
-				subscriptionRepository.save(subscription);
-
-				// Reset user subscription info
-				User profile = userService.getProfileById(userId);
-				profile.setActiveSubscription(2L); // Assuming 2L = FREE
-				profile.setSubscriptionExpiryDate(null);
-				profile.setSubscriptionPurchaseDate(null);
-				profile.setModified(LocalDateTime.now());
-				userRepository.save(profile);
-			}
-		}
-
-		logger.info("✅ Subscription check completed.");
-		return "Checked all subscriptions";
-	}
+//	@Override
+//	@Scheduled(fixedRate = 3600000) // every 1 minute
+//	public String getUsersSubscription() throws UserException {
+//		logger.info("⏰ Scheduled Task: Checking all user subscriptions...");
+//
+//		List<Subscription> subscriptions = subscriptionRepository.findAll();
+//
+//		if (subscriptions.isEmpty()) {
+//			logger.warn("⚠️ No subscriptions found in the system.");
+//			throw new UserException("No one has subscriptions.");
+//		}
+//
+//		for (Subscription subscription : subscriptions) {
+//
+//			// Skip already reset subscriptions (FREE & null expiry)
+//			if (subscription.getPlanType() == PlanType.FREE && subscription.getSubscriptionExpiryDate() == null) {
+//				continue;
+//			}
+//
+//			// Check if subscription is expired
+//			if (!isValid(subscription)) {
+//				Long userId = subscription.getUser().getId();
+//				logger.info("🔁 Resetting expired subscription for userId: {}", userId);
+//
+//				// Reset subscription
+//				subscription.setPlanType(PlanType.FREE);
+//				subscription.setIsValid(false);
+//				subscription.setSubscriptionExpiryDate(null);
+//				subscription.setSubscriptionPurchaseDate(null);
+//				subscriptionRepository.save(subscription);
+//
+//				// Reset user subscription info
+//				User profile = userService.getProfileById(userId);
+//				profile.setActiveSubscription(2L); // Assuming 2L = FREE
+//				profile.setSubscriptionExpiryDate(null);
+//				profile.setSubscriptionPurchaseDate(null);
+//				profile.setModified(LocalDateTime.now());
+//				userRepository.save(profile);
+//			}
+//		}
+//
+//		logger.info("✅ Subscription check completed.");
+//		return "Checked all subscriptions";
+//	}
 
 	@Override
 	@Transactional
