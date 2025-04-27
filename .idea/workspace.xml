@@ -5,54 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c15721b-b82f-4209-b85d-1337a8f17317" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/AdminInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/EmailSenderApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/config/AppConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/config/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/config/JwtConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/config/JwtProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/config/JwtTokenValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/EmailConfigController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/PaymentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/ReferralPointController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/SubscriptionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/exception/ErrorDetails$ErrorDetailsBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/exception/ErrorDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/exception/GlobleException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/exception/UserException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/EmailConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/ReferralPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/Subscription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/SubscriptionHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/domain/PlanType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/domain/UserRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/repository/EmailConfigRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/repository/ReferralPointRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/repository/SubscriptionHistoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/repository/SubscriptionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/response/PaymentLinkResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/response/UserToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/AdminService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/CustomUserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/EmailConfigService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/ReferralPointService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/SubscriptionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/AdminServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/EmailConfigServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/ReferralPointServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/SubscriptionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tj/email/EmailSenderApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +109,7 @@
       <workItem from="1745407487060" duration="2836000" />
       <workItem from="1745488632089" duration="2154000" />
       <workItem from="1745554015893" duration="3619000" />
-      <workItem from="1745653697309" duration="9322000" />
+      <workItem from="1745653697309" duration="9664000" />
     </task>
     <servers />
   </component>
