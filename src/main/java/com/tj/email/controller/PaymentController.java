@@ -75,7 +75,7 @@ public class PaymentController {
 		notify.put("email", true);
 		paymentLinkRequest.put("notify", notify);
 
-		paymentLinkRequest.put("callback_url", "https://gethrmails.netlify.app/upgrade/success?planType=" + planType);
+		paymentLinkRequest.put("callback_url", "https://get-easy-job.vercel.app/upgrade/success?planType=" + planType);
 		paymentLinkRequest.put("callback_method", "get");
 
 		PaymentLink payment = razorpayClient.paymentLink.create(paymentLinkRequest);
