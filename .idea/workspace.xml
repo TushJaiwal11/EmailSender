@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8c15721b-b82f-4209-b85d-1337a8f17317" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/SubscriptionController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     "Spring Boot.EmailSenderApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/SpingBoot/EmailServiceBackend And Frontend/EmailSender",
+    "last_opened_file_path": "C:/DSpace-dspace-7.6.3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -110,7 +110,7 @@
       <workItem from="1745407487060" duration="2836000" />
       <workItem from="1745488632089" duration="2154000" />
       <workItem from="1745554015893" duration="3619000" />
-      <workItem from="1745653697309" duration="16067000" />
+      <workItem from="1745653697309" duration="17431000" />
     </task>
     <servers />
   </component>

@@ -66,6 +66,8 @@ public class SubscriptionController {
 		logger.info("Subscription upgrade successful for userId: {}", profile.getId());
 		return new ResponseEntity<>(usersSubscription, HttpStatus.OK);
 	}
+
+	@GetMapping("/user/subscription/history")
 	public ResponseEntity<List<SubscriptionHistory>> getUserSubscriptionHistory(
 			@RequestHeader("Authorization") String jwt) throws UserException {
 
