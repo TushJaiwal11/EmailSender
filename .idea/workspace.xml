@@ -5,8 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c15721b-b82f-4209-b85d-1337a8f17317" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/model/PDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/model/dto/PDFDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/repository/PDFRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/service/PDFService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/service/impl/PDFServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/SubscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/AdminInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/AdminInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/EmailSenderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/EmailSenderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/config/AppConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/config/AppConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/config/JwtConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/config/JwtConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/config/JwtProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/config/JwtProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/config/JwtTokenValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/config/JwtTokenValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/EmailConfigController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/EmailConfigController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/ReferralPointController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/ReferralPointController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/SubscriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/SubscriptionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/exception/ErrorDetails$ErrorDetailsBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/exception/ErrorDetails$ErrorDetailsBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/exception/ErrorDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/exception/ErrorDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/exception/GlobleException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/exception/GlobleException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/exception/UserException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/exception/UserException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/EmailConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/model/EmailConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/ReferralPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/model/ReferralPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/Subscription.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/model/Subscription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/SubscriptionHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/model/SubscriptionHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/domain/PlanType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/model/domain/PlanType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/domain/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/model/domain/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/repository/EmailConfigRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/repository/EmailConfigRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/repository/ReferralPointRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/repository/ReferralPointRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/repository/SubscriptionHistoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/repository/SubscriptionHistoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/repository/SubscriptionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/repository/SubscriptionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/response/PaymentLinkResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/response/PaymentLinkResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/response/UserToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/response/UserToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/CustomUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/CustomUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/EmailConfigService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/EmailConfigService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/ReferralPointService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/ReferralPointService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/SubscriptionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/SubscriptionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/EmailConfigServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/EmailConfigServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/ReferralPointServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/ReferralPointServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/SubscriptionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/SubscriptionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tj/email/EmailSenderApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tj/email/EmailSenderApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +87,9 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2vIqCpUGDt7bhNsYGsXgHujIIJB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,7 +106,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.EmailSenderApplication.executor": "Run",
+    "Spring Boot.EmailSenderApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/DSpace-dspace-7.6.3",
@@ -110,7 +165,9 @@
       <workItem from="1745407487060" duration="2836000" />
       <workItem from="1745488632089" duration="2154000" />
       <workItem from="1745554015893" duration="3619000" />
-      <workItem from="1745653697309" duration="17431000" />
+      <workItem from="1745653697309" duration="18580000" />
+      <workItem from="1745859345637" duration="1528000" />
+      <workItem from="1745936000788" duration="9396000" />
     </task>
     <servers />
   </component>
@@ -137,13 +194,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
-          <line>66</line>
+          <line>62</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="22" />
+          <line>87</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/EmailConfigController.java</url>
@@ -174,7 +231,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
-          <line>63</line>
+          <line>59</line>
           <properties class="com.tj.email.controller.AdminController" method="updateUserData">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -183,7 +240,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
-          <line>49</line>
+          <line>48</line>
           <properties class="com.tj.email.controller.AdminController" method="deactivateUser">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -198,6 +255,33 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
+          <line>81</line>
+          <properties class="com.tj.email.controller.AdminController" method="uploadPdf">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
+          <line>99</line>
+          <properties class="com.tj.email.controller.AdminController" method="getAllPdfs">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/service/impl/PDFServiceImpl.java</url>
+          <line>44</line>
+          <properties class="com.tj.email.service.impl.PDFServiceImpl" method="getAllPdf">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
