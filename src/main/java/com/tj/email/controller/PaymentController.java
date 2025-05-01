@@ -76,6 +76,8 @@ public class PaymentController {
 		paymentLinkRequest.put("notify", notify);
 
 		paymentLinkRequest.put("callback_url", "https://get-easy-job.vercel.app/upgrade/success?planType=" + planType);
+
+//		paymentLinkRequest.put("callback_url", "http://localhost:3000/upgrade/success?planType=" + planType);
 		paymentLinkRequest.put("callback_method", "get");
 
 		PaymentLink payment = razorpayClient.paymentLink.create(paymentLinkRequest);

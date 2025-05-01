@@ -26,8 +26,8 @@ public class EmailConfigServiceImpl implements EmailConfigService {
 	}
 
 	@Override
-	public List<EmailConfig> getALlEmailConfig() {
-		return emailConfigRepository.findAll();
+	public List<EmailConfig> getALlEmailConfig(Long userId) {
+		return emailConfigRepository.findByUserId(userId);
 	}
 
 	@Override

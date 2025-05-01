@@ -60,7 +60,7 @@ public class EmailConfigController {
 	public ResponseEntity<List<EmailConfig>> getAllEmailConfigs(@RequestHeader("Authorization") String jwt)
 			throws UserException {
 		User profile = userService.getProfile(jwt);
-		List<EmailConfig> configs = emailConfigService.getALlEmailConfig();
+		List<EmailConfig> configs = emailConfigService.getALlEmailConfig(profile.getId());
 
 		return ResponseEntity.ok(configs);
 	}

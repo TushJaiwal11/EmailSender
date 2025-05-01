@@ -10,7 +10,7 @@ public interface EmailConfigService {
 
 	public EmailConfig createPost(EmailConfig emailConfig) throws IOException;
 
-	public List<EmailConfig> getALlEmailConfig();
+	public List<EmailConfig> getALlEmailConfig(Long userId);
 
 	public EmailConfig getEmailConfigById(Long id);
 
