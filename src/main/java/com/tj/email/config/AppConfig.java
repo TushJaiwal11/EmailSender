@@ -44,7 +44,7 @@ public class AppConfig {
 
 				config.setAllowCredentials(true);
 				config.setAllowedOrigins(Arrays.asList("http://localhost:3000", "https://geteasyjobs.netlify.app",
-						"https://gethrmails.netlify.app", "https://get-easy-job.vercel.app"));
+						"https://gethrmails.netlify.app", "https://get-easy-jobs.vercel.app"));
 				config.setAllowedHeaders(Collections.singletonList("*"));
 				config.setAllowedMethods(Collections.singletonList("*"));
 				config.setExposedHeaders(Collections.singletonList("Authorization"));
