@@ -35,7 +35,7 @@ public class UserMapper {
                 configDto.setId(config.getId());
                 configDto.setEmail(config.getEmail());
                 configDto.setMailBody(config.getMailBody());
-                configDto.setAppPassword(null); // Mask sensitive field
+                configDto.setAppPassword(config.getAppPassword()); // Mask sensitive field
                 configDto.setSubject(config.getSubject());
                 configDto.setUserId(user.getId());
                 return configDto;
