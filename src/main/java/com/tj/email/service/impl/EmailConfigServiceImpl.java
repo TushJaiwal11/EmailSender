@@ -4,7 +4,10 @@ package com.tj.email.service.impl;
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
+import com.tj.email.mapper.Mapper;
+import com.tj.email.model.dto.EmailConfigDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +22,8 @@ public class EmailConfigServiceImpl implements EmailConfigService {
 	@Autowired
 	private EmailConfigRepository emailConfigRepository;
 
+
+
 	@Override
 	public EmailConfig createPost(EmailConfig emailConfig) throws IOException {
 
@@ -26,8 +31,11 @@ public class EmailConfigServiceImpl implements EmailConfigService {
 	}
 
 	@Override
-	public List<EmailConfig> getALlEmailConfig(Long userId) {
-		return emailConfigRepository.findByUserId(userId);
+	public List<EmailConfigDTO> getALlEmailConfig(Long userId) {
+		List<EmailConfig> configs = emailConfigRepository.findByUserId(userId);
+
+		List<EmailConfigDTO> collect = configs.stream().map(this::mapToDTO).collect(Collectors.toList());
+		return collect;
 	}
 
 	@Override
@@ -66,4 +74,17 @@ public class EmailConfigServiceImpl implements EmailConfigService {
 
 		throw new UserException("Please contact your admin");
 	}
+
+	@Override
+	public EmailConfigDTO mapToDTO(EmailConfig config) {
+		EmailConfigDTO dto = new EmailConfigDTO();
+		dto.setId(config.getId());
+		dto.setEmail(config.getEmail());
+		dto.setAppPassword(config.getAppPassword());
+		dto.setSubject(config.getSubject());
+		dto.setMailBody(config.getMailBody());
+		dto.setUserId(config.getUser().getId());
+		return dto;
+	}
+
 }

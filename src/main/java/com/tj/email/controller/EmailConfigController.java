@@ -3,6 +3,7 @@ package com.tj.email.controller;
 import java.io.IOException;
 import java.util.List;
 
+import com.tj.email.model.dto.EmailConfigDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -57,10 +58,10 @@ public class EmailConfigController {
 	}
 
 	@GetMapping("/getAllMailConfig")
-	public ResponseEntity<List<EmailConfig>> getAllEmailConfigs(@RequestHeader("Authorization") String jwt)
+	public ResponseEntity<List<EmailConfigDTO>> getAllEmailConfigs(@RequestHeader("Authorization") String jwt)
 			throws UserException {
 		User profile = userService.getProfile(jwt);
-		List<EmailConfig> configs = emailConfigService.getALlEmailConfig(profile.getId());
+		List<EmailConfigDTO> configs = emailConfigService.getALlEmailConfig(profile.getId());
 
 		return ResponseEntity.ok(configs);
 	}
