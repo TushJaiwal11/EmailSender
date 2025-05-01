@@ -5,7 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c15721b-b82f-4209-b85d-1337a8f17317" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/model/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/model/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/EmailConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/EmailConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/ReferralPointController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/ReferralPointController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/SubscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/service/PDFService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/service/PDFService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/service/impl/PDFServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/service/impl/PDFServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/email/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/email/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/EmailConfigController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/EmailConfigController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/ReferralPointController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/SubscriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/SubscriptionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/PDFService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/PDFService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/PDFServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/email/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +142,7 @@
       <workItem from="1745653697309" duration="18580000" />
       <workItem from="1745859345637" duration="1528000" />
       <workItem from="1745936000788" duration="26937000" />
-      <workItem from="1746105969611" duration="1351000" />
+      <workItem from="1746105969611" duration="3133000" />
     </task>
     <servers />
   </component>
@@ -127,32 +154,32 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/UserController.java</url>
-          <line>57</line>
+          <line>58</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/UserController.java</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/EmailConfigController.java</url>
-          <line>54</line>
+          <line>58</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
-          <line>62</line>
+          <line>64</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
-          <line>87</line>
+          <line>89</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/EmailConfigController.java</url>
-          <line>40</line>
+          <line>41</line>
           <properties class="com.tj.email.controller.EmailConfigController" method="uploadResume">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -161,7 +188,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/EmailConfigController.java</url>
-          <line>84</line>
+          <line>88</line>
           <properties class="com.tj.email.controller.EmailConfigController">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -179,7 +206,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
-          <line>59</line>
+          <line>61</line>
           <properties class="com.tj.email.controller.AdminController" method="updateUserData">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -188,7 +215,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
-          <line>48</line>
+          <line>49</line>
           <properties class="com.tj.email.controller.AdminController" method="deactivateUser">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -197,7 +224,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/service/impl/AdminServiceImpl.java</url>
-          <line>62</line>
+          <line>68</line>
           <properties class="com.tj.email.service.impl.AdminServiceImpl" method="deactivateUser">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -206,7 +233,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
-          <line>81</line>
+          <line>83</line>
           <properties class="com.tj.email.controller.AdminController" method="uploadPdf">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -215,7 +242,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/AdminController.java</url>
-          <line>99</line>
+          <line>101</line>
           <properties class="com.tj.email.controller.AdminController" method="getAllPdfs">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -224,7 +251,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/service/impl/PDFServiceImpl.java</url>
-          <line>44</line>
+          <line>45</line>
           <properties class="com.tj.email.service.impl.PDFServiceImpl" method="getAllPdf">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -233,7 +260,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/tj/email/controller/EmailConfigController.java</url>
-          <line>78</line>
+          <line>82</line>
           <properties class="com.tj.email.controller.EmailConfigController" method="updateEmailConfigHandler">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

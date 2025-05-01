@@ -5,6 +5,7 @@ import com.tj.email.model.PDF;
 import com.tj.email.model.User;
 import com.tj.email.model.domain.UserRole;
 import com.tj.email.model.dto.PDFDTO;
+import com.tj.email.model.dto.UserDto;
 import com.tj.email.repository.PDFRepository;
 import com.tj.email.service.PDFService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class PDFServiceImpl implements PDFService {
     private PDFRepository pdfRepository;
 
     @Override
-    public PDF savePdf(User user, PDFDTO pdfdto) throws UserException, IOException {
+    public PDF savePdf(UserDto user, PDFDTO pdfdto) throws UserException, IOException {
 
         if(!user.getRole().equals(UserRole.ROLE_ADMIN)){
             throw new UserException("Only admin can upload the pdf file");

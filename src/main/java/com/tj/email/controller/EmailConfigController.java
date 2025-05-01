@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import com.tj.email.model.dto.EmailConfigDTO;
+import com.tj.email.model.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -43,14 +44,17 @@ public class EmailConfigController {
 			@RequestParam("appPassword") String appPassword, @RequestHeader("Authorization") String jwt)
 			throws IOException, UserException {
 
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
+
+		User user = userService.getProfileById(profile.getId());
+
 
 		EmailConfig config = new EmailConfig();
 		config.setEmail(email);
 		config.setSubject(subject);
 		config.setMailBody(mailBody);
 		config.setAppPassword(appPassword);
-		config.setUser(profile);
+		config.setUser(user);
 
 		emailConfigRepository.save(config);
 
@@ -60,7 +64,7 @@ public class EmailConfigController {
 	@GetMapping("/getAllMailConfig")
 	public ResponseEntity<List<EmailConfigDTO>> getAllEmailConfigs(@RequestHeader("Authorization") String jwt)
 			throws UserException {
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 		List<EmailConfigDTO> configs = emailConfigService.getALlEmailConfig(profile.getId());
 
 		return ResponseEntity.ok(configs);
@@ -69,7 +73,7 @@ public class EmailConfigController {
 	@PostMapping("/updateConfig/{configId}")
 	public ResponseEntity<EmailConfig> updateEmailConfigHandler(@RequestHeader("Authorization") String jwt,
 			@RequestBody EmailConfig emailConfig, @PathVariable Long configId) throws UserException {
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 		EmailConfig emailConfig1 = emailConfigService.updateEmailConfig(configId, profile.getId(), emailConfig);
 
 		return new ResponseEntity<>(emailConfig1, HttpStatus.OK);
@@ -78,7 +82,7 @@ public class EmailConfigController {
 	@DeleteMapping("/deleteConfig/{configId}")
 	public ResponseEntity<String> updateEmailConfigHandler(@RequestHeader("Authorization") String jwt,
 			@PathVariable Long configId) throws UserException {
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 		String emailConfig1 = emailConfigService.deleteEmailConfig(configId, profile.getId());
 
 		return new ResponseEntity<>(emailConfig1, HttpStatus.OK);
@@ -87,7 +91,7 @@ public class EmailConfigController {
 	@GetMapping("/getMailConfig/{configId}")
 	public ResponseEntity<EmailConfig> getEmailConfigs(@RequestHeader("Authorization") String jwt,
 			@PathVariable Long configId) throws UserException {
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 		EmailConfig configs = emailConfigService.getEmailConfigById(configId);
 
 		return ResponseEntity.ok(configs);

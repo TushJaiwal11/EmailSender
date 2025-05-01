@@ -1,5 +1,6 @@
 package com.tj.email.controller;
 
+import com.tj.email.model.dto.UserDto;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -44,7 +45,7 @@ public class PaymentController {
 	public ResponseEntity<PaymentLinkResponse> createPaymentLink(@PathVariable PlanType planType,
 			@RequestHeader("Authorization") String jwt) throws UserException, RazorpayException {
 
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 		ReferralPoint referralPoint = referralPointService.getReferralPointByUserId(profile.getId());
 
 		long baseAmount = 100L * 100L; // ₹100 in paise

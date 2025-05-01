@@ -2,6 +2,7 @@ package com.tj.email.controller;
 
 import java.util.List;
 
+import com.tj.email.model.dto.UserDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,7 +54,7 @@ public class SubscriptionController {
 
 		logger.info("PUT /upgrade-plan - Request to upgrade subscription to: {}", planType);
 
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 		if (profile == null) {
 			logger.error("User profile not found from JWT token.");
 			throw new UserException("User not found for JWT token");
@@ -73,7 +74,7 @@ public class SubscriptionController {
 
 		logger.info("GET /user/subscription/history - Fetching subscription history");
 
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 		if (profile == null) {
 			logger.error("User profile not found for JWT token.");
 			throw new UserException("User Not Found");

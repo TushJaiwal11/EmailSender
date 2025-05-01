@@ -2,6 +2,7 @@ package com.tj.email.service;
 
 import java.util.List;
 
+import com.tj.email.model.dto.UserDto;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.tj.email.exception.UserException;
@@ -9,7 +10,7 @@ import com.tj.email.model.User;
 
 public interface UserService {
 
-	public User getProfile(String jwt) throws UserException;
+	public UserDto getProfile(String jwt) throws UserException;
 
 	public User getUserByEmailId(String email);
 

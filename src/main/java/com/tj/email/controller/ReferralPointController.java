@@ -1,5 +1,6 @@
 package com.tj.email.controller;
 
+import com.tj.email.model.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,8 +29,9 @@ public class ReferralPointController {
 	public ResponseEntity<ReferralPoint> getReferralPointHandler(@RequestHeader("Authorization") String jwt)
 			throws UserException {
 
-		User profile = userService.getProfile(jwt);
-		ReferralPoint referralPoint = referralPointService.getReferralPointById(profile.getReferralPoint().getId());
+		UserDto profile = userService.getProfile(jwt);
+		User user = userService.getProfileById(profile.getId());
+		ReferralPoint referralPoint = referralPointService.getReferralPointById(user.getReferralPoint().getId());
 
 		return new ResponseEntity<ReferralPoint>(referralPoint, HttpStatus.OK);
 

@@ -2,7 +2,10 @@ package com.tj.email.service.impl;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import com.tj.email.model.dto.UserDto;
+import com.tj.email.model.mapper.UserMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,19 +42,22 @@ public class AdminServiceImpl implements AdminService {
 	private SubscriptionRepository subscriptionRepository;
 
 	@Override
-	public List<User> getAllUsers(User user) throws UserException {
-
+	public List<UserDto> getAllUsers(UserDto user) throws UserException {
 		logger.info("Fetching all users for Admin Access: {}", user.getEmail());
 
-		if (user.getRole().equals(UserRole.ROLE_ADMIN)) {
+		if (UserRole.ROLE_ADMIN.equals(user.getRole())) {
 			List<User> all = userRepository.findAllByOrderByCreatedDesc();
 			logger.info("Found {} users sorted by created date", all.size());
-			return all;
+
+			return all.stream()
+					.map(UserMapper::toDto) // assuming you have a mapper
+					.collect(Collectors.toList());
 		}
 
 		logger.warn("Unauthorized access attempt by user: {}", user.getEmail());
-		throw new UserException("Only admin can have access");
+		throw new UserException("Access denied: Admin privileges required");
 	}
+
 
 	@Override
 	public List<User> getSubscriptionUsers() {
@@ -60,7 +66,7 @@ public class AdminServiceImpl implements AdminService {
 	}
 
 	@Override
-	public String deactivateUser(User user, Long userId) throws UserException {
+	public String deactivateUser(UserDto user, Long userId) throws UserException {
 
 		User profile = userService.getProfileById(userId);
 

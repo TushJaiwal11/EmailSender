@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.tj.email.model.dto.UserDto;
+import com.tj.email.model.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,7 +24,7 @@ public class UserServiceImpl implements UserService {
 	private UserRepository userRepository;
 
 	@Override
-	public User getProfile(String jwt) throws UserException {
+	public UserDto getProfile(String jwt) throws UserException {
 
 		String email = JwtProvider.getEmailFromJwtToken(jwt);
 		if (email == null) {
@@ -32,7 +34,7 @@ public class UserServiceImpl implements UserService {
 		if (user == null) {
 			throw new UserException("user not fount :");
 		}
-		return user;
+		return UserMapper.toDto(user);
 	}
 
 	@Override

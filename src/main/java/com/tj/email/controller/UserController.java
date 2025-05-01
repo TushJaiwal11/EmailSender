@@ -2,6 +2,7 @@ package com.tj.email.controller;
 
 import java.util.List;
 
+import com.tj.email.model.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,9 +28,9 @@ public class UserController {
 	private UserService userService;
 
 	@GetMapping("/profile")
-	public ResponseEntity<User> getProfileHandler(@RequestHeader("Authorization") String jwt) throws UserException {
+	public ResponseEntity<UserDto> getProfileHandler(@RequestHeader("Authorization") String jwt) throws UserException {
 
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 
 		return new ResponseEntity<>(profile, HttpStatus.OK);
 	}
@@ -38,7 +39,7 @@ public class UserController {
 	public ResponseEntity<User> updateProfileHandler(@RequestHeader("Authorization") String jwt,
 			@PathVariable Long userId, @RequestBody User user) throws UserException {
 
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 
 		if (profile == null) {
 			throw new UserException("User not found or else please re login");
@@ -53,7 +54,7 @@ public class UserController {
 	public ResponseEntity<String> updateProfileImageHandler(@RequestHeader("Authorization") String jwt,
 			@RequestParam("image") MultipartFile image) throws UserException {
 
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 
 		if (profile == null) {
 			throw new UserException("User not found or else please re login");
@@ -68,7 +69,7 @@ public class UserController {
 	public ResponseEntity<List<User>> getAllUsersHandler(@RequestHeader("Authorization") String jwt)
 			throws UserException {
 
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 
 		List<User> allUser = userService.getAllUser(profile.getId());
 
@@ -79,7 +80,7 @@ public class UserController {
 	public ResponseEntity<List<User>> getreferredUsersHandler(@RequestHeader("Authorization") String jwt)
 			throws UserException {
 
-		User profile = userService.getProfile(jwt);
+		UserDto profile = userService.getProfile(jwt);
 
 		List<User> users = userService.getAllRefralById(profile.getId());
 
